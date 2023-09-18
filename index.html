@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+
+    <meta charset="UTF-8" />
+    <!--Essa linha é responsável pela parte responsiva do Site
+      content="width=device-width: Pega a largura do dispositivo e adapta a pagina a ela
+      initial-scale=1.0: Inicia a pagian sem Zoom
+    -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projeto RocketSeat</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="container">
+      <!--Foto e @-->
+      <div id="profile">
+        <img
+          src="assets/avatar.png"
+          alt="Foto de um motoqueiro admirando a paisagem"
+        />
+        <p>@Skyress1</p>
+      </div>
+
+      <!--Botão de troca de Cor, usa o Script lá no fim da pagina para chamar o JS com a função-->
+      <div id="switch" onclick="toggleMode()">
+        <button></button>
+        <span></span>
+      </div>
+
+      <!--Lista de Botões-->
+      <ul>
+        <li>
+          <a href="https://randomwordgenerator.com/picture.php" target="_blank"
+            >Random Image Generator</a
+          >
+        </li>
+        <li>
+          <a href="https://www.lipsum.com/" target="_blank"
+            >Lorem Ipsum Text Generator</a
+          >
+        </li>
+        <li>
+          <a href="https://fonts.google.com/" target="_blank">Google Fonts</a>
+        </li>
+        <li>
+          <a href="https://ionic.io/" target="_blank">Ionic Icons</a>
+        </li>
+        <li>
+          <a href="https://caniuse.com/" target="_blank">Can i Use?</a>
+        </li>
+        <li>
+          <a href="#">I'm Fake Button</a>
+        </li>
+      </ul>
+
+      <!--Redes Sociais-->
+      <div id="social-links">
+        <a href="https://www.facebook.com/" target="_blank">
+          <ion-icon name="logo-facebook"></ion-icon>
+        </a>
+        <a href="https://github.com/" target="_blank">
+          <ion-icon name="logo-github"></ion-icon>
+        </a>
+        <a href="https://br.linkedin.com/" target="_blank">
+          <ion-icon name="logo-linkedin"></ion-icon>
+        </a>
+        <a href="https://www.youtube.com/" target="_blank">
+          <ion-icon name="logo-youtube"></ion-icon>
+        </a>
+      </div>
+      <footer>
+        Feito por mim no Copy da
+        <a href="https://www.rocketseat.com.br/" target="_blank">RocketSeat</a>
+      </footer>
+    </div>
+    <!--Script dos icones-->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+
+    <!--Chama o JavaScript que vai trocar o fundo de claro para escuro e vice versa-->
+    <script src="./script.js"></script>
+  </body>
+</html>

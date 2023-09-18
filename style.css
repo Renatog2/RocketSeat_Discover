@@ -1,0 +1,155 @@
+/*Esse marcador universal vai ignorar os padrões do navegador e zerar tudo para trabalhar no CSS todos os estilos*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --text-color: white;
+  --bg-url: url(./assets/bg-mobile.jpg);
+  --stroke-color: rgba(255, 255, 255, 0.5);
+  --surface-color: rgba(255, 255, 255, 0.05);
+  --surface-color-hover: rgba(255, 255, 255, 0.02);
+  --highlight-color: rgba(255, 255, 255, 0.2);
+  --switch-bg-url: url(./assets/moon-stars.svg);
+}
+
+.light {
+  --text-color: black;
+  --bg-url: url(./assets/bg-mobile-light.jpg);
+  --stroke-color: rgba(0, 0, 0, 0.5);
+  --surface-color: rgba(0, 0, 0, 0.05);
+  --surface-color-hover: rgba(0, 0, 0, 0.02);
+  --highlight-color: rgba(0, 0, 0, 0.1);
+  --switch-bg-url: url(./assets/sun.svg);
+}
+
+body {
+  background-image: var(--bg-url);
+  background-repeat: no-repeat; /*Não vai deixar a imagem ficar se repetindo*/
+  background-position-x: center; /*X é a posição da imgagem <->*/
+  background-position-y: top; /*Y é a posição da imagem ↕*/
+  background-size: cover; /*Vai esticar a imagem para cobrir sempre todo o espaço da tela (Não fica aquelas baras brancas no canto)*/
+}
+
+/*O * é o identificador para tudo que está dentro do Body que não tiver valor definido com peso maior vai usar essas configs*/
+body * {
+  font-family: "Inter", sans-serif;
+  color: var(--text-color);
+}
+
+#container {
+  /*border: 1px solid red; /*É interessante colocar as bordas para vc ver onde está a caixa que você está trabalhando e como as alterações estão sendo realizadas*/
+  width: 360px;
+  margin: 56px auto 0px; /*Esse faz sempre o container ficar Centralizado*/
+  padding: 0 24px;
+}
+
+#profile {
+  text-align: center; /*Como Div é display: block eu preciso que o profile fique centralizado para consequentemente o que vem dentro dele também ficar centralizado*/
+  padding: 24px; /*Ele coloca de todas as bordas uma distancia, nesse caso 24px*/
+}
+
+#profile img {
+  width: 112px;
+}
+
+#profile p {
+  font-weight: 500; /*É a grossura da letra que peguei lá do fonts.google.com*/
+  font-size: 16px; /*Por Padrão os navegadores já pegam 16 então essa linha ta redundante*/
+  line-height: 24px; /*Altura da linha*/
+  margin-top: 8px;
+}
+
+#switch {
+  position: relative;
+  width: 64px;
+  margin: 4px auto;
+}
+
+#switch button {
+  width: 32px;
+  height: 32px;
+  background: white var(--switch-bg-url) no-repeat center;
+  border: 0;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  z-index: 1;
+  transform: translateY(-50%);
+}
+
+.light #switch button {
+  right: 0;
+  left: initial;
+}
+
+#switch span {
+  display: block;
+  width: 64px;
+  height: 24px;
+  background: var(--surface-color);
+  border: 1px solid var(--stroke-color);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 9999px;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 16px; /*Vai inserir 8 pixels entre as linhas da tabela*/
+  padding: 24px 0px;
+}
+
+ul li a {
+  border: 1px solid var(--stroke-color); /*Faz a borda cinza escuro do botão, o A é a transparência da borda*/
+  display: flex;
+  align-items: center; /*Deixa centralizado no sentido ↕*/
+  justify-content: center; /*Deixa centralizado no sentido <->**/
+  padding: 16px 24px;
+  background: var(--surface-color); /*Faz o fundo cinza do botão*/
+  border-radius: 8px; /*Faz a borda ficar arredondada*/
+  backdrop-filter: blur(4px); /*Da uma embaçada no botão*/
+  -webkit-backdrop-filter: blur(
+    4px
+  ); /*Webkit que faz a compatibilidade com o determinados nagevadores para eles entederem o que é para ser feito (Consulta sempre no "Can i Use?" para saber quando tem que usar)*/
+  text-decoration: none; /*Remove o sublinhado no texto que vinha como padrão*/
+  font-weight: 500; /*Aplica a fonte importada do Google Fonts com o maior peso (A que fica meio negrito)*/
+  transition: background 0.2s; /*Faz a chamada para trocar a cor do botão e define o tempo da ação de trocar no caso 0,2 segundos*/
+}
+
+/*Faz o efeito que você passa o mouse e muda a cor do botão*/
+ul li a:hover {
+  border: 1.5px solid var(--text-color);
+  background: var(--surface-color-hover);
+}
+
+#social-links {
+  display: flex;
+  justify-content: center;
+  padding: 24px 0px;
+  font-size: 24px;
+}
+
+#social-links a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+  transition: background 0.2s;
+  border-radius: 50%;
+}
+
+#social-links a:hover {
+  background: var(--highlight-color);
+}
+
+footer {
+  padding: 24px 0;
+  text-align: center;
+  font-size: 14px;
+}
