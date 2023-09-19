@@ -41,7 +41,9 @@ body * {
 
 #container {
   /*border: 1px solid red; /*É interessante colocar as bordas para vc ver onde está a caixa que você está trabalhando e como as alterações estão sendo realizadas*/
-  width: 360px;
+  width: 100%;
+  /*Esse cara limita até 588px para que fique 100% até 588, no caso é parte do Layout Responsivo*/
+  max-width: 588px;
   margin: 56px auto 0px; /*Esse faz sempre o container ficar Centralizado*/
   padding: 0 24px;
 }
