@@ -27,6 +27,7 @@
 
 body {
   background-image: var(--bg-url);
+  height: 100vh;
   background-repeat: no-repeat; /*Não vai deixar a imagem ficar se repetindo*/
   background-position-x: center; /*X é a posição da imgagem <->*/
   background-position-y: top; /*Y é a posição da imagem ↕*/
@@ -154,4 +155,18 @@ footer {
   padding: 24px 0;
   text-align: center;
   font-size: 14px;
+}
+
+/*Media Queries
+Serve para colocar condições a serem atendidas para fazer mudanças, no caso mudar a imagem de fundo quando a quantidade de pixels do dispositivo ultrapassar 700
+
+Para isso funcionar precisa ter no index o 'meta name="viewport"'
+*/
+@media (min-width: 700px) {
+  :root {
+    --bg-url: url(./assets/bg-desktop.jpg);
+  }
+  .light {
+    --bg-url: url(./assets/bg-desktop-light.jpg);
+  }
 }
