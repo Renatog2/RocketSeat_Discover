@@ -1,0 +1,23 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  padding: 10px;
+  border: 1px solid red;
+}
+
+ul li a {
+  display: inline-flex;
+  padding: 5px 5px;
+  text-decoration: none;
+  border: 1px solid red;
+}
