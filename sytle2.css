@@ -1,23 +1,45 @@
+:root {
+  --text-button-color: white;
+  --button-background-color: gray;
+}
+
+.dark {
+  --text-button-color: yellow;
+  --button-background-color: black;
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
 }
 
 ul {
+  border: 1px solid red;
   list-style: none;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  gap: 16px;
+  gap: 5px;
   padding: 10px;
-  border: 1px solid red;
 }
 
 ul li a {
+  border: 1px solid red;
   display: inline-flex;
   padding: 5px 5px;
   text-decoration: none;
-  border: 1px solid red;
+  text-align: center;
+}
+
+#HeaderButton {
+  background-color: var(--button-background-color);
+  border: none;
+  color: var(--text-button-color);
+  cursor: pointer;
+  padding: 5px 10px;
+  border-radius: 8px;
 }

@@ -1,6 +1,12 @@
 <!DOCTYPE html>
 <html lang="pt-br">
   <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Projeto 2.0</title>
@@ -10,16 +16,36 @@
   <header>
     <ul>
       <li>
-        <a href="index.html"><button>Voltar a Versão 1</button></a>
-      </li>
-      <li>
+        <a href="index.html"
+          ><button id="HeaderButton">
+            <ion-icon name="arrow-undo-outline"></ion-icon> Voltar a Versão 1
+          </button>
+        </a>
         <a>Acessibilidade</a>
-        <a href="index.html"><button>A -</button></a>
-        <a href="index.html"><button>A +</button></a>
-        <a href="index.html"><button> A </button></a>
-        <a href="index.html"><button>Inverter Cores</button></a>
+        <a
+          ><button id="HeaderButton" onclick=" fontSize('Decrease')">
+            A -
+          </button></a
+        >
+        <a
+          ><button id="HeaderButton" onclick=" fontSize('Increase')">
+            A +
+          </button></a
+        >
+        <a><button id="HeaderButton"> A </button></a>
+        <a><button id="HeaderButton">Inverter Cores</button></a>
       </li>
     </ul>
   </header>
-  <body></body>
+  <body>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+  <script src="./script2.js"></script>
 </html>
