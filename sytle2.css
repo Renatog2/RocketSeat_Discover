@@ -1,11 +1,13 @@
 :root {
-  --text-button-color: white;
-  --button-background-color: gray;
+  --text-button-color: black;
+  --button-background-color: lightgray;
+  --background-color: white;
 }
 
-.dark {
+.contrast {
   --text-button-color: yellow;
   --button-background-color: black;
+  --background-color: black;
 }
 
 * {
@@ -14,28 +16,26 @@
   box-sizing: border-box;
   font-family: "Inter", sans-serif;
   font-size: 16px;
+  font-weight: 400;
+  background-color: var(--background-color);
 }
-
-ul {
+#ulHeader {
   border: 1px solid red;
   list-style: none;
   display: flex;
-  flex-direction: row;
-  align-items: center;
   justify-content: center;
   gap: 5px;
   padding: 10px;
 }
 
-ul li a {
+#liHeader {
   border: 1px solid red;
-  display: inline-flex;
   padding: 5px 5px;
-  text-decoration: none;
-  text-align: center;
+  color: var(--text-button-color);
 }
 
-#HeaderButton {
+#buttonHeader {
+  background: var(--button-background-color);
   background-color: var(--button-background-color);
   border: none;
   color: var(--text-button-color);

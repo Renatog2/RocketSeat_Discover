@@ -14,26 +14,43 @@
   </head>
 
   <header>
-    <ul>
-      <li>
+    <ul id="ulHeader">
+      <li id="liHeader">
         <a href="index.html"
-          ><button id="HeaderButton">
-            <ion-icon name="arrow-undo-outline"></ion-icon> Voltar a Versão 1
-          </button>
-        </a>
-        <a>Acessibilidade</a>
+          ><button id="buttonHeader">
+            <ion-icon name="arrow-undo-outline"></ion-icon> Voltar a Versão 1
+          </button></a
+        >
+        <a> Acessibilidade </a>
         <a
-          ><button id="HeaderButton" onclick=" fontSize('Decrease')">
+          ><button id="buttonHeader" onclick=" fontSize('Decrease')">
             A -
           </button></a
         >
         <a
-          ><button id="HeaderButton" onclick=" fontSize('Increase')">
+          ><button id="buttonHeader" onclick=" fontSize('Increase')">
             A +
           </button></a
         >
-        <a><button id="HeaderButton"> A </button></a>
-        <a><button id="HeaderButton">Inverter Cores</button></a>
+        <a
+          ><button id="buttonHeader" onclick="fontSize('Default')">
+             A 
+          </button></a
+        >
+        <a
+          ><button
+            id="buttonHeader"
+            onclick="fontStrong('Strong')"
+            style="font-weight: 700"
+          >
+             A 
+          </button></a
+        >
+        <a
+          ><button id="buttonHeader" onclick="fontChange()">
+            Inverter Cores
+          </button></a
+        >
       </li>
     </ul>
   </header>
