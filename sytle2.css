@@ -1,13 +1,17 @@
 :root {
   --text-button-color: black;
   --button-background-color: lightgray;
+  --button-border-color: none;
   --background-color: white;
+  --mix-blend-mode: multiply;
 }
 
 .contrast {
   --text-button-color: yellow;
   --button-background-color: black;
+  --button-border-color: yellow;
   --background-color: black;
+  --mix-blend-mode: none;
 }
 
 * {
@@ -19,6 +23,11 @@
   font-weight: 400;
   background-color: var(--background-color);
 }
+
+ion-icon {
+  mix-blend-mode: var(--mix-blend-mode);
+}
+
 #ulHeader {
   border: 1px solid red;
   list-style: none;
@@ -29,15 +38,15 @@
 }
 
 #liHeader {
-  border: 1px solid red;
+  border: 1.5px solid red;
   padding: 5px 5px;
   color: var(--text-button-color);
 }
 
 #buttonHeader {
+  border: 1px solid var(--button-border-color);
   background: var(--button-background-color);
   background-color: var(--button-background-color);
-  border: none;
   color: var(--text-button-color);
   cursor: pointer;
   padding: 5px 10px;
