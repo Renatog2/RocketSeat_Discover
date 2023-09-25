@@ -36,6 +36,12 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 O DevLinks é representa o modulo Discover da RocketSeat dando uma introdução a Devs iniciantes ou aqueles que desejam a reentrada no mercado.
 
+Na versão 2.0 que está com um link pretendo desenvolver:
+✅ Cabeçalho com barras e funções de acessibilidade (Aumentar/diminuir fonte, Negrito e Alto Contraste) que irão se aplicar a todo conteúdo
+❌ Design responsivo
+❌ Sistemas de Login
+❌ Lista de links dinâmicas obtidas através de conexão com um Banco de Dados, onde os usuários autenticados poderão inserir, alterar ou excluir os elementos da lista.
+
 ## 🔖 Layout
 
 <p dir="auto">Você pode visualizar o layout do projeto através <a href="https://www.figma.com/community/file/1187422022288947321/duplicate" rel="nofollow">DESSE LINK</a>. É necessário ter conta no <a href="https://figma.com" rel="nofollow">Figma</a> para acessá-lo.</p>
