@@ -37,10 +37,12 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 O DevLinks é representa o modulo Discover da RocketSeat dando uma introdução a Devs iniciantes ou aqueles que desejam a reentrada no mercado.
 
 Na versão 2.0 que está com um link pretendo desenvolver:
-✅ Cabeçalho com barras e funções de acessibilidade (Aumentar/diminuir fonte, Negrito e Alto Contraste) que irão se aplicar a todo conteúdo
-❌ Design responsivo
-❌ Sistemas de Login
-❌ Lista de links dinâmicas obtidas através de conexão com um Banco de Dados, onde os usuários autenticados poderão inserir, alterar ou excluir os elementos da lista.
+<ul dir="auto">
+<li>✅ Cabeçalho com barras e funções de acessibilidade (Aumentar/diminuir fonte, Negrito e Alto Contraste) que irão se aplicar a todo conteúdo</li>
+<li>❌ Design responsivo</li>
+<li>❌ Sistemas de Login</li>
+<li>❌ Lista de links dinâmicas obtidas através de conexão com um Banco de Dados, onde os usuários autenticados poderão inserir, alterar ou excluir os elementos da lista.</li>
+</ul>
 
 ## 🔖 Layout
 
