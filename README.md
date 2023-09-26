@@ -35,8 +35,17 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 ## 💻 Projeto
 
 O DevLinks é representa o modulo Discover da RocketSeat dando uma introdução a Devs iniciantes ou aqueles que desejam a reentrada no mercado.
+Os Objetivos do projeto Padrão são:
+
+<ul dir="auto">
+<li>✅ Concluir o Projeto Original do Discover</li>
+<li>▶️ Desafios de Nível Básico</li>
+<li>❌ Desafios de Nível Intermediário</li>
+<li>❌ Desafios de Nível Avançado</li>
+</ul>
 
 Na versão 2.0 que está com um link pretendo desenvolver:
+
 <ul dir="auto">
 <li>✅ Cabeçalho com barras e funções de acessibilidade (Aumentar/diminuir fonte, Negrito e Alto Contraste) que irão se aplicar a todo conteúdo</li>
 <li>❌ Design responsivo</li>

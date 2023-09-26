@@ -24,6 +24,7 @@
   background-color: var(--background-color);
 }
 
+/*Esse comando é para remover o fundo do icone do ionicons*/
 ion-icon {
   mix-blend-mode: var(--mix-blend-mode);
 }

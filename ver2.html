@@ -13,28 +13,42 @@
     <link rel="stylesheet" href="sytle2.css" />
   </head>
 
+  <!--Verificar nos conteúdos de Conceitos para trocar de ID para CLASS os botões-->
   <header>
     <ul id="ulHeader">
       <li id="liHeader">
-        <a href="index.html"
+        <a href="index.html" title="Retornar ao projeto Original"
           ><button id="buttonHeader">
-            <ion-icon name="arrow-undo-outline"></ion-icon> Voltar a Versão 1
+            <ion-icon name="arrow-undo-outline"></ion-icon>&nbsp; Voltar a
+            Versão 1
           </button></a
         >
-        <a> Acessibilidade </a>
+        <a>&nbsp; Acessibilidade &nbsp;</a>
         <a
-          ><button id="buttonHeader" onclick=" fontSize('Decrease')">
+          ><button
+            id="buttonHeader"
+            onclick="fontSize('Decrease')"
+            title="Diminuir Fonte"
+          >
             A -
           </button></a
         >
         <a
-          ><button id="buttonHeader" onclick=" fontSize('Increase')">
+          ><button
+            id="buttonHeader"
+            onclick="fontSize('Increase')"
+            title="Aumentar Fonte"
+          >
             A +
           </button></a
         >
         <a
-          ><button id="buttonHeader" onclick="fontSize('Default')">
-             A 
+          ><button
+            id="buttonHeader"
+            onclick="fontSize('Default')"
+            title="Tamanho Padrão"
+          >
+            &nbsp; A &nbsp;
           </button></a
         >
         <a
@@ -42,12 +56,17 @@
             id="buttonHeader"
             onclick="fontStrong('Strong')"
             style="font-weight: 700"
+            title="Aplicar Negrito"
           >
-             A 
+            &nbsp; A &nbsp;
           </button></a
         >
         <a
-          ><button id="buttonHeader" onclick="fontChange()">
+          ><button
+            id="buttonHeader"
+            onclick="fontChange()"
+            title="Alto Contraste"
+          >
             Inverter Cores
           </button></a
         >
