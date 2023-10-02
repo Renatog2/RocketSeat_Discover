@@ -5,6 +5,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Arquivo para Testes</title>
+    <!--Identificar o Autor da Pagina-->
+    <meta name="author" content="Renato Gustavo" />
+    <!--O texto que aparece quando você pesquisa no Google por exemplo sobre a pagina-->
+    <meta name="description" content="Pagina para testes do Guia Estelar" />
   </head>
   <body>
     <p>
@@ -47,5 +51,86 @@
     <a href="./Estelar/fragmentoEstelar.html">
       Aqui tem uma pagina mostrando como os fragmentos funcionam
     </a>
+    <br />
+    <br />
+
+    <p>Exemplo de Tabela Simples</p>
+    <table>
+      <caption>
+        Pessoas por idade
+      </caption>
+
+      <thead>
+        <tr>
+          <th>Nome</th>
+          <th>Idade</th>
+          <th>Sexo</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+          <td>Renato</td>
+          <td>26</td>
+          <td>M</td>
+        </tr>
+        <tr>
+          <td>Gustavo</td>
+          <td>27</td>
+          <td>M</td>
+        </tr>
+      </tbody>
+
+      <tfoot>
+        <tr>
+          <td>Total:</td>
+          <td>2 Pessoas</td>
+        </tr>
+      </tfoot>
+    </table>
+    <br />
+    <br />
+
+    <p>Exemplo de Tabela Complexa</p>
+    <table>
+      <caption>
+        Produtos Produzidos X Vendidos por Loja
+      </caption>
+
+      <colgroup>
+        <col />
+        <col span="2" style="background-color: red" />
+        <col span="2" style="background-color: blue" />
+      </colgroup>
+      <thead>
+        <tr>
+          <th rowspan="2"></th>
+          <th colspan="2" scope="colgroup">Galeria Cascavel</th>
+          <th colspan="2" scope="colgroup">Shopping Curitiba</th>
+        </tr>
+        <tr>
+          <th scope="col">Produzido</th>
+          <th scope="col">Vendido</th>
+          <th scope="col">Produzido</th>
+          <th scope="col">Vendido</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">Vassouras</th>
+          <th>50</th>
+          <th>30</th>
+          <th>20</th>
+          <th>20</th>
+        </tr>
+        <tr>
+          <th scope="row">Baldes</th>
+          <th>10</th>
+          <th>10</th>
+          <th>30</th>
+          <th>25</th>
+        </tr>
+      </tbody>
+    </table>
   </body>
 </html>
